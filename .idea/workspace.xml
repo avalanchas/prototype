@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="830b9bc8-3bfa-4db6-9366-ce37cac78972" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/prototype/DataKeys.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/prototype/logics/HandlerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/prototype/logics/TextHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/logics/DataHandler.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/logics/DataHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityConverter.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityFactory.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityRaw.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityRaw.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/ui/HandlerActivity.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/ui/HandlerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/utils/FileHandler.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/utils/FileHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java" afterPath="$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java" />
     </list>
     <ignored path="Prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityRaw.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActivityRaw.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/prototype/ui/ActivityRaw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30964467">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitmapHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BitmapHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.68358713">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,9 +156,9 @@
         <option value="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityFactory.java" />
         <option value="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityRaw.java" />
         <option value="$PROJECT_DIR$/src/com/example/prototype/ui/ActivityConverter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/prototype/ui/HandlerActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/prototype/utils/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java" />
       </list>
     </option>
   </component>
@@ -919,7 +910,7 @@
       <created>1458062771261</created>
       <option name="number" value="Default" />
       <updated>1458062771261</updated>
-      <workItem from="1458062772475" duration="14701000" />
+      <workItem from="1458062772475" duration="14845000" />
     </task>
     <task id="LOCAL-00001" summary="raw working">
       <created>1458080083915</created>
@@ -927,11 +918,17 @@
       <option name="project" value="LOCAL" />
       <updated>1458080083915</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="converter and factory working, mostly done">
+      <created>1458083424449</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1458083424449</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14701000" />
+    <option name="totallyTimeSpent" value="14845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -971,7 +968,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="raw working" />
-    <option name="LAST_COMMIT_MESSAGE" value="raw working" />
+    <MESSAGE value="converter and factory working, mostly done" />
+    <option name="LAST_COMMIT_MESSAGE" value="converter and factory working, mostly done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1124,16 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/prototype/ui/ActivityConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1174,12 +1162,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/prototype/ui/ActivityRaw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30964467">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2071#2072#0" expanded="true" />
             <element signature="e#2099#2100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/prototype/logics/BitmapHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68358713">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

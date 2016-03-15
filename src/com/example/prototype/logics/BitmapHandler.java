@@ -27,7 +27,7 @@ public class BitmapHandler implements DataHandler {
             return view;
         } else {
             TextView view = new TextView(context);
-            view.setText("Error, data in file '" + data.getName() + "' not adequate for BitmapHandler!");
+            view.setText("Note, data in file '" + data.getName() + "' is not adequate for BitmapHandler!");
             return view;
         }
     }
