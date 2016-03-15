@@ -1,6 +1,5 @@
 package com.example.prototype.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ViewGroup;
@@ -20,7 +19,7 @@ import java.util.List;
  * <p/>
  * Created by Patrick on 15.03.2016.
  */
-public class ActivityRaw extends Activity implements DataHandler {
+public class ActivityRaw extends HandlerActivity implements DataHandler {
 
     private static final String LOG_TAG = ActivityRaw.class.getSimpleName();
 
@@ -36,6 +35,8 @@ public class ActivityRaw extends Activity implements DataHandler {
 
         // Get all input that has been placed at the interface from a FileHandler
         List<File> inputFiles = new FileHandler(this).findInputFiles();
+
+        // Handle the prototyping approach for this handler
         handleData(inputFiles);
     }
 
@@ -48,20 +49,24 @@ public class ActivityRaw extends Activity implements DataHandler {
         }
     }
 
-
     /**
      * Creates a fully initialised TextView containing the raw text specified in the parameters
      *
+     * @param name
+     * @param size
+     * @param encoding
+     * @param extension
      * @return
      */
     private TextView getRawTextView(String name, String size, String encoding, String extension) {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(8, 0, 8, 16);
         TextView result = new TextView(this);
         result.setLayoutParams(params);
 
-        result.setText("New input data found.\nName: " + name + "\nFile size: " + size + "\nFile encoding: " +
-                encoding + "\nFile extension: " + extension);
+        result.setText("New input data found.\nFile Name: " + name + "\nFile size: " + size + " bytes\nFile encoding:" +
+                " " + encoding + "\nFile extension: " + extension);
         return result;
     }
 
@@ -72,12 +77,17 @@ public class ActivityRaw extends Activity implements DataHandler {
             return URLConnection.guessContentTypeFromStream(stream);
         } catch (IOException e) {
             Log.d(LOG_TAG, "Mime type not determined", e);
-            return null;
+            return "Unknown";
         }
     }
 
     private String getExtension(File file) {
         String fileName = file.getName();
         return fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length());
+    }
+
+    @Override
+    public String getHandlerTag() {
+        return "Raw";
     }
 }
