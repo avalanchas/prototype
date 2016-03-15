@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prototype</string>
+    <string name="prototype_choose">Please choose a data input approach and hit \'Start\'</string>
+    <string name="prototype_start">Start data input</string>
+    <string name="data_raw">Raw data display</string>
+    <string name="data_converter">Converted data display</string>
+    <string name="data_factory">Factorised data handling</string>
+    <string name="header1">Dynamic data input prototyping</string>
+    <string name="header2">Start</string>
+    <string name="incoming">Interface data input will be displayed below</string>
+    <string name="output">Dynamic data output</string>
+</resources>
