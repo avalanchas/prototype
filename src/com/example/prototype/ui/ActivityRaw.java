@@ -1,13 +1,7 @@
 package com.example.prototype.ui;
 
-import android.os.Bundle;
 import android.util.Log;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.example.prototype.R;
-import com.example.prototype.logics.DataHandler;
-import com.example.prototype.utils.FileHandler;
 
 import java.io.*;
 import java.net.URLConnection;
@@ -19,26 +13,10 @@ import java.util.List;
  * <p/>
  * Created by Patrick on 15.03.2016.
  */
-public class ActivityRaw extends HandlerActivity implements DataHandler {
+public class ActivityRaw extends HandlerActivity {
 
     private static final String LOG_TAG = ActivityRaw.class.getSimpleName();
 
-    private ViewGroup mHost;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.data);
-
-        // Setup the host for later filling with input
-        mHost = (ViewGroup) findViewById(R.id.output_host);
-
-        // Get all input that has been placed at the interface from a FileHandler
-        List<File> inputFiles = new FileHandler(this).findInputFiles();
-
-        // Handle the prototyping approach for this handler
-        handleData(inputFiles);
-    }
 
     @Override
     public void handleData(List<File> data) {
@@ -59,12 +37,7 @@ public class ActivityRaw extends HandlerActivity implements DataHandler {
      * @return
      */
     private TextView getRawTextView(String name, String size, String encoding, String extension) {
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT);
-        params.setMargins(8, 0, 8, 16);
-        TextView result = new TextView(this);
-        result.setLayoutParams(params);
-
+        TextView result = prepareView(new TextView(this));
         result.setText("New input data found.\nFile Name: " + name + "\nFile size: " + size + " bytes\nFile encoding:" +
                 " " + encoding + "\nFile extension: " + extension);
         return result;

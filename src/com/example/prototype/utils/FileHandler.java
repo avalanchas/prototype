@@ -4,6 +4,7 @@ import android.content.Context;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -27,7 +28,9 @@ public class FileHandler {
     private List<File> getFilesFromDirectory(File directory) {
         List<File> result = new ArrayList<>();
         if (directory != null) {
-            for (final File file : directory.listFiles()) {
+            File[] files = directory.listFiles();
+            Arrays.sort(files);
+            for (final File file : files) {
                 if (file.isDirectory()) {
                     result.addAll(getFilesFromDirectory(file));
                 } else {
