@@ -13,13 +13,13 @@ import java.util.List;
  * <p/>
  * Created by Patrick on 15.03.2016.
  */
-public class ActivityRaw extends HandlerActivity {
+public class ActivityRaw extends PrototypeActivity {
 
     private static final String LOG_TAG = ActivityRaw.class.getSimpleName();
 
 
     @Override
-    public void handleData(List<File> data) {
+    public void inputFound(List<File> data) {
         for (File file : data) {
             TextView text = getRawTextView(file.getName(), String.valueOf(file.length()), guessMimeType(file),
                     getExtension(file));
