@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Activity for handling file data by converting the incoming data to a String, absolutely no matter the content. This
  * will display meaningful results for some inputs but appear as jibberish for non-text files (binary files)
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public class ActivityConverter extends PrototypeActivity {
 
@@ -45,7 +45,7 @@ public class ActivityConverter extends PrototypeActivity {
      * Generates a TextView containing the String passed as the parameter as text
      *
      * @param content The text to set on the TextView
-     * @return A fullly initialized, fully formatted TextView, ready for display
+     * @return A fully initialized, fully formatted TextView, ready for display
      */
     private TextView getContentTextView(String content) {
         TextView result = prepareView(new TextView(this));

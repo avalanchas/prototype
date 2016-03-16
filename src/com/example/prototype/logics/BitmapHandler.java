@@ -14,7 +14,7 @@ import java.io.File;
  * image on the screen. Therefore, use this handler whenever you're quite sure the data is a bitmap. Falls back to
  * showing a warning String if the data could not be read as a bitmap image.
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public class BitmapHandler implements DataHandler {
 

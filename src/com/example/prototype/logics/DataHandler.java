@@ -9,7 +9,7 @@ import java.io.File;
  * Data handling definition interface to implement for all factorised handlers. This unifies the processing of the file
  * input from the interface.
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public interface DataHandler {
 

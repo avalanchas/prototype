@@ -17,7 +17,7 @@ import java.util.List;
  * Parent activity for all activities that handle approaches of prototyping. Hosts some method for better encapsulation
  * and code reuse
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public abstract class PrototypeActivity extends Activity {
 
@@ -47,7 +47,7 @@ public abstract class PrototypeActivity extends Activity {
      *
      * @return A String giving a small indication of what handler is actually instantiated
      */
-    public abstract String getHandlerTag();
+    protected abstract String getHandlerTag();
 
     /**
      * Invocation called at the moment that data from the interface is found! The implementation must react to this call
@@ -55,7 +55,7 @@ public abstract class PrototypeActivity extends Activity {
      *
      * @param data A list of Files found on the filesystem as input
      */
-    public abstract void inputFound(List<File> data);
+    protected abstract void inputFound(List<File> data);
 
     /**
      * Helper method for formatting and layouting a view in a way that it looks good on display. This method is the only

@@ -14,7 +14,7 @@ import java.util.List;
  * {@link DataHandler} implementation! The data handler implementation may return any child class of {@link
  * android.view.View}
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public class ActivityFactory extends PrototypeActivity {
 

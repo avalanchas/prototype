@@ -8,7 +8,7 @@ import java.io.File;
 /**
  * DataHandler for all kinds of simple text files that need to be read and then have their content displayed in full
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public class TextHandler implements DataHandler {
 

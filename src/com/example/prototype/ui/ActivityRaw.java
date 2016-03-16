@@ -11,7 +11,7 @@ import java.util.List;
  * Activity for handling file data as raw data packages without caring about their information content other than some
  * of its file (meta-) properties. Will display the input information as a list of string blocks and nothing more
  * <p/>
- * Created by Patrick on 15.03.2016.
+ * Created by Patrick
  */
 public class ActivityRaw extends PrototypeActivity {
 
